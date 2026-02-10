@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="number" id="numb" placeholder="Enter a number"><br>
+        <button type="button" onclick="Submit()">Submit</button>
+
+        <script>
+            function Submit(){
+                let numb=Number(document.getElementById("numb").value);
+                if(numb%2==0){
+                    document.writeln("Even number");
+                }else{
+                    document.writeln("Odd number");
+                }
+            }
+        </script>
+    </body>
+</html>

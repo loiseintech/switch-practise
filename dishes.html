@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="number" id="dish" placeholder="Enter a number 1,2 or3">
+         <button type="button" onclick="choose()">Show meal</button>
+          <p id="meal"></p>
+         <script>
+            function choose() {
+                let dish=Number (document.getElementById("dish").value);
+                let message;
+
+                switch (dish){
+                    case 1:
+                        message="Burger";
+                        break;
+                    case 2:
+                        message="Pizza";
+                        break;
+                    case 3:
+                        message="Pasta";
+                        break;
+                    default:
+                        message="Nonexistent";
+                } 
+                document.getElementById("meal").innerHTML=message;
+            }
+                
+
+        
+            
+         </script>
+    </body>
+</html>

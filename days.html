@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="number" id="numb" placeholder="Enter a number">
+        <button type="button" onclick="checkday()">Check day</button>
+        <p id="dy"></p>
+
+        <script>
+           function checkday(){
+            let numb=Number(document.getElementById("numb").value);
+            let message;
+
+            switch (numb){
+                case 1:
+                    message="Sunday";
+                    break;
+                case 2: 
+                    message="Monday";
+                    break;
+                case 3: 
+                    message="Tuesday";
+                    break;
+                case 4: 
+                    message="Wednesday";
+                    break;
+                case 5: 
+                    message="Thursday";
+                    break;
+                case 6: 
+                    message="Friday";
+                    break;
+                case 7: 
+                    message="Saturday";
+                    break;
+            }
+            document.getElementById("dy").innerHTML=message;
+           } 
+        </script>
+    </body>
+</html>

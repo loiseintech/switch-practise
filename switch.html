@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Traffic Light </h2>
+
+        <input type="text" id="col" placeholder="Color name"><br>
+        <button type="button" onclick="checkcolor()">Check Color</button>
+        
+        <p id="output"></p>
+        <script>
+            function checkcolor(){
+                let col=(document.getElementById("col").value);
+                let result;
+
+                switch (col){
+                    case "red":
+                        result ="Stop";
+                        break;
+                    case "green":
+                        result ="Go";
+                        break;
+                    case "yellow": 
+                        result ="Slow down";
+                        break;
+                    default:
+                        result="Unknown color";
+                }
+                document.getElementById("output").innerHTML=result;
+            }
+        </script>
+    </body>
+</html>

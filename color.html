@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Traffic Light </h2>
+
+        <button type="button" onclick="checkcolor()">Check Color</button>
+        
+        <p id="output"></p>
+        <script>
+            function checkcolor(){
+                let col=prompt("Enter a color");
+
+                switch (col){
+                    case "red":
+                        alert("Stop");
+                        break;
+                    case "green":
+                        alert ("Go");
+                        break;
+                    case "yellow": 
+                        alert ("Slow down");
+                        break;
+                    default:
+                        alert("Unknown color");
+            }
+        }
+        </script>
+    </body>
+</html>

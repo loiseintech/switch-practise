@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="number" id="numb" placeholder="Enter a number">
+        <button type="button" onclick="check()">Check number</button>
+        <p id="num"></p>
+        <script>
+            function check(){
+                let numb=Number(document.getElementById("numb").value);
+                let message;
+                switch (numb%2){
+                    case 0:
+                        message="Even number";
+                        break;
+                    default :
+                        message="Odd number";
+                }
+                document.getElementById("num").innerHTML=message;
+            }
+        </script>
+    </body>
+</html>
