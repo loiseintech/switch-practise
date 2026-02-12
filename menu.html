@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Menu</h1>
+        <ol>
+            <li>Starter</li>
+            <li>Main course</li>
+            <li>Dessert</li>
+            <li>Drink</li>
+        </ol>
+        <h2>Choose the course</h2>
+        <input type="text" id="course" placeholder="Enter your choice">
+        <button type="button" onclick="check()">See</button>
+        <p id="choose"></p>
+        <script>
+            function check(){
+                let course=document.getElementById("course").value;
+                let message;
+
+                switch(course){
+                    case "Starter":
+                        message=("Soup","Salad","Fruit");
+                        break;
+                    case "Main course":
+                        message=("Fish fillet","Stake","Chicken");
+                        break;
+                    case "Dessert":
+                        message="Chocolate"; message="Ice cream"; message="Brawn";
+                        break;
+                    case "Drink":
+                        message=("Passion","Mango","Orange");
+                        break;
+                    default:
+                        message="Invalid";
+                }
+                document.getElementById("choose").innerHTML=message;
+            }
+        </script>
+    </body>
+</html>

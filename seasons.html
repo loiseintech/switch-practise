@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <button type="button" onclick="checkmonth()">Check Month</button>
+
+        <script>
+            function checkmonth(){
+            let season=prompt("Enter a month");
+            
+            switch(season){
+                case "December":case "January": case "February":
+                    alert("Winter");
+                    break;
+                case "March": case"April": case "May":
+                    alert("Spring");
+                    break;
+                case "June":case "July":case "August":
+                    alert("Summer");
+                    break;
+                case "September": case"October": case "November":
+                    alert("Autumn");
+                    break;
+                default:
+                    alert("Invalid entry")
+            }
+        
+        }
+        </script>
+    </body>
+</html>

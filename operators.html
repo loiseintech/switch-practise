@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="number" id="numb" placeholder="Enter one number">
+        <input type="text" id="txt" placeholder="Enter an operator">
+        <input type="number" id="no" placeholder="Enter another number">
+        <button type="button" onclick="add()">Submit</button>
+        <p id="operate"></p>
+        <script>
+            function add(){
+                let numb=Number(document.getElementById("numb").value);
+                let no=Number(document.getElementById("no").value);
+                let txt=document.getElementById("txt").value;
+                let message;
+
+                switch(txt){
+                    case "+":
+                        let c=numb+no;
+                        message=("sum "+ c);
+                        break;
+                    case "-":
+                        let d=numb-no;
+                        message=("subtraction" + d);
+                        break;
+                    case "*":
+                        let e=numb*no;
+                        message=("product "+ e);
+                        break;
+                    case "/":
+                        let f=numb/no;
+                        message=("quotient "+ f);
+                        break;
+                    default:
+                        message="invalid";
+
+                        
+                }
+                document.getElementById("operate").innerHTML=message;
+            }
+        </script>
+    </body>
+</html>

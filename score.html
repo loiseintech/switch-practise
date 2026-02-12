@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="number" id="numb" placeholder="Enter your score">
+        <button type="button" onclick="check()">Check grade</button>
+        <p id="score"></p>
+
+        <script>
+            function check(){
+                let numb=Number(document.getElementById("numb").value);
+                let message;
+
+                switch(true){
+                    case (numb>=90 && numb<=100):
+                        message="A";
+                        break;
+                    case (numb>=80):
+                        message="B";
+                        break;
+                    case (numb>=70):
+                        message="C";
+                        break;
+                    case (numb>=60):
+                        message="D";
+                        break;
+                    default:
+                        message="F"
+                }
+                document.getElementById("score").innerHTML=message;
+            }
+        </script>
+    </body>
+</html>

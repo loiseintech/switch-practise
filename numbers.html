@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="number" id="numb" placeholder="Enter a number 1-5">
+        <button type="button" onclick="submit()">Submit</button>
+        <p id="strength"></p>
+        <script>
+            function submit(){
+                let numb=Number(document.getElementById("numb").value);
+                let result;
+
+                switch(numb){
+                    case 1:
+                        result="Very weak";
+                        break;
+                    case 2:
+                        result="Weak"; 
+                        break;
+                    case 3:
+                        result="Medium";
+                        break;
+                    case 4:
+                        result="Strong";
+                        break;
+                    case 5:
+                        result= "Very strong";
+                        break;
+                    default:
+                        result="Invalid";
+
+                }
+                document.getElementById("strength").innerHTML=result;
+            }
+        </script>
+    </body>
+</html>

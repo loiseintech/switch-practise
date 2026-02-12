@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="text" id="access" placeholder="Enter your position">
+        <button type="button" onclick="check()">Check Permissions</button>
+
+        <script>
+            function check(){
+                let perm=document.getElementById("access").value;
+
+                switch(perm){
+                    case ("Admin"):
+                        alert("Full system control");
+                        break;
+                    case ("Teacher"):
+                        alert("Manage classes");
+                        break;
+                    case ("Student"):
+                        alert("View lessons");
+                        break;
+                    case ("Guest"): 
+                        alert("View only");
+                        break;
+                    default: 
+                        alert("Invalid");
+                }
+
+            }
+        </script>
+    </body>
+</html>

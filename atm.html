@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="number" id="options" placeholder="Enter a number">
+        <button type="button" onclick="check()">Check Option</button>
+        <p id="all"></p>
+        <script>
+            function check(){
+                let options=Number(document.getElementById("options").value);
+                let message;
+
+                switch(options){
+                    case 1:
+                        message="Check balance";
+                        break;
+                    case 2:
+                        message="Deposit";
+                        break; 
+                    case 3: 
+                        message="Withdraw";
+                        break;
+                    case 4: 
+                        message="Exit";
+                        break;
+                    default:
+                        message="Invalid";
+                }
+                document.getElementById("all").innerHTML=message;
+            }
+        </script>
+
+    </body>
+</html>

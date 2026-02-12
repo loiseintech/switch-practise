@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Ticket System</h2>
+        <input type="number" id="age" placeholder="Enter your age">
+        <button type="button" onclick="check()">Check Ticket</button>
+        <p id="tick"></p>
+
+        <script>
+            function check(){
+                let age=Number(document.getElementById("age").value);
+                let result;
+
+                switch(true){
+                    case (age>=0 && age<=12):
+                        result="Child ticket";
+                        break;
+                    case (age<=19): 
+                        result="Teen ticket";
+                        break;
+                    case (age<=59): 
+                        result="Adult ticket";
+                        break;
+                    case (age<=90):
+                        result="Senior ticket";
+                        break;
+                    default:
+                        result="Invalid"
+                }
+                document.getElementById("tick").innerHTML=result;
+            }
+        </script>
+    </body>
+</html>

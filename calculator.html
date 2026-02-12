@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="number" id="numb" placeholder="Enter a number">
+        <input type="number" id="no" placeholder="Enter another number">
+        <section>
+           <h2>Menu</h2>
+            <button type="button" onclick="plus()">Add</button>
+            <button type="button" onclick="minus()">Subtract</button>
+            <button type="button" onclick="times()">Multiply</button>
+            <button type="button" onclick="over()">Divide</button>
+            <button type="button" onclick="pow()">Power</button>
+        </section>
+        <P id="get"></P>
+
+        <script>
+            function plus(){
+                let numb=Number(document.getElementById("numb").value);
+                let no=Number(document.getElementById("no").value);
+
+                switch(add){
+                    case "+": 
+                       let a=numb+no;
+                       message=("sum "+a);
+                       break;
+                    default:
+                        message="Invalid";
+                }
+            }          
+
+             function minus() {
+                let numb=Number(document.getElementById("numb").value);
+                let no=Number(document.getElementById("no").value); 
+                
+                switch (minus){
+                    case "-": 
+                       let b=numb-no;
+                       message=("subtraction "+a);
+                       break;
+                }
+             }
+                    case "*": 
+                       let c=numb*no;
+                       message=("product "*a);
+                       break;
+                    case "/": 
+                       let d=numb/no;
+                       message=("quotient "+a);
+                       break;
+                    case "^": 
+                       let e=numb^no;
+                       message=("power "+a);
+                       break;
+                }
+                  document.getElementById("get").innerHTML=message;
+             }
+                
+
+        </script>
+
+    </body>
+</html>
