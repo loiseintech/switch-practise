@@ -17,18 +17,54 @@
                 let course=document.getElementById("course").value;
                 let message;
 
-                switch(course){
-                    case "Starter":
-                        message=("Soup","Salad","Fruit");
+                 switch("Starter"){
+                    case "Soup":
+                        message="soup";
                         break;
-                    case "Main course":
-                        message=("Fish fillet","Stake","Chicken");
+                    case "Salad":
+                        message="Salad";
                         break;
-                    case "Dessert":
-                        message="Chocolate"; message="Ice cream"; message="Brawn";
+                    case "Fruit":
+                        message="Fruit";
                         break;
-                    case "Drink":
-                        message=("Passion","Mango","Orange");
+                    default:
+                        message="Invalid";
+                }
+                switch("Main course"){
+                    case "Fish fillet":
+                        message="Fish fillet";
+                        break;
+                    case "Stake":
+                        message="Stake";
+                        break;
+                    case "Chicken":
+                        message="Chicken";
+                        break;
+                    default:
+                        message="Invalid";
+                }
+                switch("Dessert"){
+                    case "Chocolate": 
+                        message="Chocolate";
+                        break;
+                    case "Ice cream" : 
+                        message="Ice cream";
+                        break;
+                    case "Brawn":
+                        message="Brawn";
+                        break;
+                    default:
+                        message="Invalid";
+            }
+                switch("Drink"){
+                    case "Passion":
+                        message="Passion";
+                        break;
+                    case "Mango":
+                        message="Mango";
+                        break;
+                    case "Orange":
+                        message="Orange";
                         break;
                     default:
                         message="Invalid";

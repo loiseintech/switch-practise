@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+         <button onclick="showarray()">Show students</button>
+         <p id="results"></p>
+
+         <script>
+            let students=["John","Mary","Edna","Loise"];
+            function showarray(){
+                document.getElementById("results").innerHTML=students.join(",");
+            }
+         </script>
+    </body>
+</html>

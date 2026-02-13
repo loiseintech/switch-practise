@@ -2,61 +2,45 @@
 <html>
     <body>
         <input type="number" id="numb" placeholder="Enter a number">
+        <input type="text" id="oper" placeholder="Enter an operator">
         <input type="number" id="no" placeholder="Enter another number">
-        <section>
-           <h2>Menu</h2>
-            <button type="button" onclick="plus()">Add</button>
-            <button type="button" onclick="minus()">Subtract</button>
-            <button type="button" onclick="times()">Multiply</button>
-            <button type="button" onclick="over()">Divide</button>
-            <button type="button" onclick="pow()">Power</button>
-        </section>
+        <button type="button" onclick="submit()">Submit</button>
         <P id="get"></P>
 
         <script>
-            function plus(){
+            function submit(){
                 let numb=Number(document.getElementById("numb").value);
                 let no=Number(document.getElementById("no").value);
+                let oper=document.getElementById("oper").value;
+                let message;
 
-                switch(add){
+                switch(oper){
                     case "+": 
                        let a=numb+no;
                        message=("sum "+a);
                        break;
-                    default:
-                        message="Invalid";
-                }
-            }          
-
-             function minus() {
-                let numb=Number(document.getElementById("numb").value);
-                let no=Number(document.getElementById("no").value); 
-                
-                switch (minus){
                     case "-": 
                        let b=numb-no;
-                       message=("subtraction "+a);
+                       message=("subtraction "+b);
                        break;
-                }
-             }
                     case "*": 
                        let c=numb*no;
-                       message=("product "*a);
+                       message=("product "+c);
                        break;
-                    case "/": 
+                    case "/":   
                        let d=numb/no;
-                       message=("quotient "+a);
+                       message=("quotient "+d);
                        break;
                     case "^": 
                        let e=numb^no;
-                       message=("power "+a);
+                       message=("power "+e);
                        break;
+                    default:
+                        message="Invalid";
                 }
-                  document.getElementById("get").innerHTML=message;
-             }
-                
-
-        </script>
+                document.getElementById("get").innerHTML=message;
+            }
+         </script>
 
     </body>
 </html>
